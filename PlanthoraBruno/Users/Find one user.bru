@@ -1,0 +1,19 @@
+meta {
+  name: Find one user
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3456/user/6704e8a4d642b36a313c744c
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Gus",
+    "lastname": "Jim",
+    "username": "GJ"
+  }
+}
